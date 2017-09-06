@@ -1,0 +1,16 @@
+.Header {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #388E3C; }
+
+.Header-logo :hover {
+  animation: Header-logo-spin infinite 5s linear; }
+
+@keyframes Header-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

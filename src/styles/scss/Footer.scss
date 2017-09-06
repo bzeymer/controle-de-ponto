@@ -1,0 +1,20 @@
+@import 'colors';
+
+.Footer {
+  height: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $primary-color;
+}
+
+.Footer-info {
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+}
+
+.Footer-small {
+  padding: 5px;
+}

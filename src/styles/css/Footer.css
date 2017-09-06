@@ -1,0 +1,15 @@
+.Footer {
+  height: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #C8E6C9; }
+
+.Footer-info {
+  display: flex;
+  align-items: center;
+  color: #757575; }
+
+.Footer-small {
+  padding: 5px; }

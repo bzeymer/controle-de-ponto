@@ -1,0 +1,28 @@
+@import 'colors';
+
+.Header {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-color-dark;
+}
+
+.Header-logo :hover {
+  animation: Header-logo-spin infinite 5s linear;
+}
+
+.Header-userDiv {
+}
+
+.Header-userIcon {
+}
+
+.Header-userName {
+}
+
+@keyframes Header-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
