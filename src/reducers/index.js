@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-import PadraoReducer from './reducerPadrao';
+import NavReducer from './reducerNav';
 
 const rootReducer = combineReducers({
     
-    //Entidade padrão
-    padrao: PadraoReducer,
+    //Entidade Nav
+    nav: NavReducer,
     
 });
 

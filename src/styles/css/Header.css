@@ -6,11 +6,6 @@
   justify-content: space-between;
   background-color: #388E3C; }
 
-.Header-logo {
-  size: 200%; }
-  .Header-logo:hover {
-    animation: Header-logo-spin infinite 5s linear; }
-
 @keyframes Header-logo-spin {
   from {
     transform: rotate(0deg); }

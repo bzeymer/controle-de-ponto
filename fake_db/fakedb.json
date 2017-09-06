@@ -1,6 +1,9 @@
 {
-  "login": {
-    "nome": "Breno",
-    "senha": "321654"
-  }
+  "users": [
+    {
+      "id": 1,
+      "nome": "Breno",
+      "senha": "321654"
+    }
+  ]
 }

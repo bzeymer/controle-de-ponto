@@ -1,4 +1,4 @@
-import { green700, green500, green100, lightGreen500, grey900, grey600, white, black, darkBlack, fullBlack } from 'material-ui/styles/colors';
+import { green700, green500, green100, lightGreen500, grey600, white, black, darkBlack, fullBlack } from 'material-ui/styles/colors';
 
 import {fade} from 'material-ui/utils/colorManipulator';
 import spacing from 'material-ui/styles/spacing';

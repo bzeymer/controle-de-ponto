@@ -1,37 +1,49 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { toggleNav } from '../actions/nav';
 
 import '../styles/css/Header.css';
 import ActionAccountCircle from "material-ui/svg-icons/action/account-circle";
-import DeviceAccessTime from "material-ui/svg-icons/device/access-time";
+import NavigationMenu from "material-ui/svg-icons/navigation/menu";
 import { FlatButton, IconButton } from "material-ui";
 
-import logo from "../images/logo.png";
+class Header extends Component {
 
-export default class Header extends Component {
+    onMainMenuClick() {
+        this.props.toggleNav();
+    }
 
     render() {
         return ( 
             <div className="Header">
-                <IconButton
-                    style={{
-                        width: 96,
-                        height: 96,
-                        padding: 24,
-                    }}
-                    iconStyle={{
-                        width: 48,
-                        height: 48,
-                    }}
-                >
-                    <DeviceAccessTime className="Header-logo"/>
+                <IconButton onClick={() => this.onMainMenuClick()}>
+                    <NavigationMenu/>
                 </IconButton>
-                <h1>Controle de ponto</h1>
-                <FlatButton className="Header-userDiv"
-                    icon={<ActionAccountCircle className="Header-userIcon"/>}
+                <h1>Cadastro de Ponto</h1>
+                <FlatButton
+                    icon={<ActionAccountCircle/>}
                     label="Breno"
                 />
             </div>
         );
     }
 }
+
+
+function mapStateToProps(state) {
+    return {
+        
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        toggleNav: toggleNav
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));
 

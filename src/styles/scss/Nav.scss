@@ -1,7 +1,7 @@
 @import 'colors';
 
-.Header {
-  height: 50px;
+.Nav {
+  height: 35px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -9,7 +9,6 @@
   background-color: $primary-color-dark;
 }
 
-@keyframes Header-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Nav-item {
+  color: $primary-text-color !important;
 }
